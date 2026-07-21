@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Responsivo</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .caja {
+      background: #f4f4f4;
+      padding: 20px;
+      margin: 10px;
+      flex: 1;
+      text-align: center;
+    }
+
+    /* Responsivo para móviles */
+    @media (max-width: 768px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .caja {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gestionar</h1>
+  </header>
+
+  <div class="contenedor">
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+    <div class="caja">Caja 3</div>
+  </div>
+</body>
+</html>
